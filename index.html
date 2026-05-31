@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BITTCOO NFT Mint</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>BITTCOO</h1>
+  <button class="wallet">Connect Wallet</button>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="tag">ON-CHAIN BITCOIN INSPIRED NFT</p>
+    <h2>BITTCOO</h2>
+    <p>
+      NFTs are digital collectibles secured by blockchain ownership.
+      Bittcoo is a bold Bitcoin-inspired NFT collection built for collectors
+      who value scarcity, transparent supply, and clean on-chain identity.
+    </p>
+
+    <div class="stats">
+      <div><strong id="minted-count">0</strong><span>Minted</span></div>
+      <div><strong id="supply-count">1000</strong><span>Supply</span></div>
+      <div><strong>BTT</strong><span>Symbol</span></div>
+    </div>
+
+    <div class="actions">
+      <a href="#free" class="btn primary">Open Free Mint</a>
+      <a href="#paid" class="btn outline">Open Paid Mint</a>
+    </div>
+  </div>
+
+  <div class="nft-card">
+    <svg viewBox="0 0 500 500">
+      <rect width="500" height="500" fill="#111827"/>
+      <circle cx="250" cy="250" r="170" fill="#F7931A"/>
+      <text x="250" y="315" text-anchor="middle" font-family="Arial" font-size="210" font-weight="bold" fill="white">₿</text>
+      <circle cx="250" cy="250" r="170" fill="none" stroke="#FFD27A" stroke-width="12"/>
+    </svg>
+  </div>
+</section>
+
+<section id="free" class="mint-section">
+  <div class="nft-card small">
+    <svg viewBox="0 0 500 500">
+      <rect width="500" height="500" fill="#111827"/>
+      <circle cx="250" cy="250" r="170" fill="#F7931A"/>
+      <text x="250" y="315" text-anchor="middle" font-family="Arial" font-size="210" font-weight="bold" fill="white">₿</text>
+      <circle cx="250" cy="250" r="170" fill="none" stroke="#FFD27A" stroke-width="12"/>
+    </svg>
+  </div>
+
+  <div>
+    <p class="tag">FREE MINT</p>
+    <h2>Free Mint Portal</h2>
+    <p>Claim your Bittcoo NFT. Wallet limit: 1–4 NFTs.</p>
+    <p class="wallet-used">Your Free Mint Used: <span id="free-used">0</span> / 4</p>
+
+    <div class="counter">
+      <button id="free-minus">-</button>
+      <strong id="free-amount">1</strong>
+      <button id="free-plus">+</button>
+    </div>
+
+    <button class="mint free" id="free-mint-btn">Free Mint</button>
+  </div>
+</section>
+
+<section id="paid" class="mint-section">
+  <div>
+    <p class="tag">PAID MINT</p>
+    <h2>Paid Mint Portal</h2>
+    <p>Mint Bittcoo for 0.0001 ETH each. Wallet limit: 1–10 NFTs.</p>
+    <p class="wallet-used">Your Paid Mint Used: <span id="paid-used">0</span> / 10</p>
+
+    <div class="counter">
+      <button id="paid-minus">-</button>
+      <strong id="paid-amount">1</strong>
+      <button id="paid-plus">+</button>
+    </div>
+
+    <button class="mint paid" id="paid-mint-btn">Paid Mint</button>
+  </div>
+
+  <div class="nft-card small">
+    <svg viewBox="0 0 500 500">
+      <rect width="500" height="500" fill="#111827"/>
+      <circle cx="250" cy="250" r="170" fill="#F7931A"/>
+      <text x="250" y="315" text-anchor="middle" font-family="Arial" font-size="210" font-weight="bold" fill="white">₿</text>
+      <circle cx="250" cy="250" r="170" fill="none" stroke="#FFD27A" stroke-width="12"/>
+    </svg>
+  </div>
+</section>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p>
+    Bittcoo combines professional NFT design with playful web3 minting energy.
+    It is made for collectors who enjoy polished digital ownership and simple,
+    transparent NFT mechanics.
+  </p>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Replace these links with your official community links.</p>
+
+  <div class="socials">
+    <a href="https://x.com/YOUR_HANDLE" target="_blank">X</a>
+    <a href="https://warpcast.com/YOUR_HANDLE" target="_blank">Farcaster</a>
+    <a href="https://t.me/YOUR_CHANNEL" target="_blank">Telegram</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 BITTCOO. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
